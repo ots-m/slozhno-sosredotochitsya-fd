@@ -137,7 +137,7 @@
 
 .section__title {
   margin-block-end: var(--section-element-block-end);
-  color: var(--additional-color);
+  color: var(--main-section-color);
   font-weight: 700;
   font-size: var(--accent-font-size);
   line-height: 23.4px;
