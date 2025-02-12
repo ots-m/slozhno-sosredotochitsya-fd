@@ -2,6 +2,7 @@
 
 .page {
   background-color: var(--background-color);
+  background-attachment: fixed
 }
 
 .header {
@@ -137,7 +138,7 @@
 .section__title {
   margin-block-end: var(--section-element-block-end);
   color: var(--additional-color);
-  font-weight: 700; 
+  font-weight: 700;
   font-size: var(--accent-font-size);
   line-height: 23.4px;
 }
