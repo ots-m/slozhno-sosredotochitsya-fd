@@ -14,5 +14,30 @@
   --padding-block-start: 40px;
   --section-block-end: 50px;
   --section-element-block-end: 20px;
+  --section-pictures-element-block-end: 10px;
   --footer-margin-block-start: 30px;
+}
+
+@media (width >= 768px) {
+  :root {
+    --additional-font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+    --accent-padding: 20px;
+  }
+
+  .main {
+    --accent-padding: 20px;
+    --padding-block-start: 60px;
+  }
+
+  .section:not(:last-of-type) {
+    --section-block-end: 80px;
+  }
+
+  .section__subtitle.section__pictures-subtitle {
+    --section-pictures-element-block-end: 20px;
+  }
+
+  .footer {
+    --footer-margin-block-start: 40px;
+  }
 }

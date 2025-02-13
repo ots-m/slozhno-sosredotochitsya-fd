@@ -7,27 +7,40 @@
 :root.theme-dark {
   --background-image: url(../images/cover-image-dark.png);
   --background-color: #000028;
-  --main-section-color: #000028;
+  --title-decor-color: #000028;
   --accent-color: #F1B2CE;
   --additional-color: #FF0070;
   --additional-color-opacity: rgba(255,0,112, .4);
   --title-color: #DB00FF;
   --shadow-color: #FF0070;
-
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background-image: url(../images/cover-image-dark.png);
     --background-color: #000028;
-    --main-section-color: #000028;
+    --title-decor-color: #000028;
     --accent-color: #F1B2CE;
     --additional-color: #FF0070;
     --additional-color-opacity: rgba(255,0,112, .4);
     --title-color: #DB00FF;
     --shadow-color: #FF0070;
+    }
+
+  .theme-auto .decorated-zone::after, 
+  .theme-auto .decorated-zone::before, 
+  .theme-auto .header__theme-menu-button,
+  .theme-auto .header__theme-menu-button_active, 
+  .theme-auto .header__theme-menu-button:focus-visible, 
+  .theme-auto .section__title {
+  --additional-color: #FF0070;
+    }
+
+  .theme-auto .header__theme-menu-button:hover {
+  --additional-color-opacity: rgba(255,0,112, .4);
+    }
+
   }
-}
 
 .theme-dark .page {
     --background-color: #000028;

@@ -14,7 +14,6 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/dark.css" />
     <link rel="stylesheet" href="./styles/light.css" />
-    <script src="./scripts/script.js"></script>
   </head>
   <body class="page">
     <header class="header header__background decorated-zone">
@@ -52,11 +51,14 @@
       </p>
     </header>
     <main class="main">
-      <section class="section section__concentrate">
+      <section class="section section__concentrate section__grid-wrapper">
         <h2 class="section__title section__concentrate-title">
           Почему сосредоточиться так сложно
         </h2>
-        <article class="section__article section__concentrate-article">
+        <div class="section__grid-container">
+        <article
+          class="section__article section__concentrate-article"
+        >
           <h3 class="article__title title-decor">Многозадачность</h3>
           <p class="article__paragraph">
             Особенно сложно сосредоточиться, когда задач много и все они —
@@ -75,7 +77,9 @@
             устаём.
           </p>
         </article>
-        <article class="section__article section__concentrate-article">
+        <article
+          class="section__article section__concentrate-article"
+        >
           <h3 class="article__title title-decor">Дофамин</h3>
           <p class="article__paragraph">
             С гормонами стресса всё понятно, но дальше — ещё интереснее. В нашей
@@ -88,11 +92,13 @@
             тем больше удовольствия получаешь.
           </p>
         </article>
+        </div>
       </section>
-      <section class="section section__reduced-concentration">
+      <section class="section section__reduced-concentration section__grid-wrapper">
         <h2 class="section__title section__reduced-concentration-title">
           Что снижает концентрацию внимания?
         </h2>
+        <div class="section__grid-container">
         <article
           class="section__article section__reduced-concentration-article"
         >
@@ -133,19 +139,27 @@
             затем нужно, чтобы вернуться к работе.
           </p>
         </article>
+        </div>
       </section>
-      <section class="section section__how-to-concentrate">
+      <section
+        class="section section__how-to-concentrate section__grid-wrapper"
+      >
         <h2 class="section__title section__how-to-concentrate-title">
           Как концентрироваться лучше, чем золотая рыбка (то есть дольше трёх
           секунд)
         </h2>
-        <article class="section__article section__how-to-concentrate-article">
-          <h3
-            class="section__subtitle title-decor section__how-to-concentrate-subtitle"
-          >
-            5 простых (на самом деле не очень) советов
-          </h3>
-          <h4 class="article__title title-decor">Представьте небо и облака</h4>
+      <div class="section__grid-container">
+        <h3
+          class="section__subtitle title-decor section__how-to-concentrate-subtitle"
+        >
+          5 простых (на самом деле не очень) советов
+        </h3>
+        <article
+          class="section__article section__how-to-concentrate-article"
+        >
+          <h4 class="article__title title-decor article__title_type_light">
+            Представьте небо и облака
+          </h4>
           <p class="article__paragraph">
             Или листья в ручье. Тут дело в лёгкой медитации, которая помогает
             успокоиться. Ведь часто именно тревожные мысли о сложных задачах как
@@ -157,8 +171,12 @@
             проблемах из будущего.
           </p>
         </article>
-        <article class="section__article section__how-to-concentrate-article">
-          <h4 class="article__title title-decor">Включите музыку</h4>
+        <article
+          class="section__article section__how-to-concentrate-article"
+        >
+          <h4 class="article__title title-decor article__title_type_light">
+            Включите музыку
+          </h4>
           <p class="article__paragraph">
             Но не любую, и не любимую. Любимая может быть связана с сильными
             положительными эмоциями, которые тоже очень сильно отвлекают.
@@ -166,8 +184,12 @@
             попробовать включить плейлист с «белым шумом» или нейромузыкой.
           </p>
         </article>
-        <article class="section__article section__how-to-concentrate-article">
-          <h4 class="article__title title-decor">Прогуляйтесь</h4>
+        <article
+          class="section__article section__how-to-concentrate-article"
+        >
+          <h4 class="article__title title-decor article__title_type_light">
+            Прогуляйтесь
+          </h4>
           <p class="article__paragraph">
             Или даже пробегитесь. Лучше найти парк или лес: один эксперимент
             <a
@@ -183,8 +205,12 @@
             простая двадцатиминутная прогулка — тоже отличный вариант.
           </p>
         </article>
-        <article class="section__article section__how-to-concentrate-article">
-          <h4 class="article__title title-decor">Хорошо ешьте</h4>
+        <article
+          class="section__article section__how-to-concentrate-article"
+        >
+          <h4 class="article__title title-decor article__title_type_light">
+            Хорошо ешьте
+          </h4>
           <p class="article__paragraph">
             Мы — не ваша бабушка, но это правда важно. Выбирайте продукты,
             которые препятствуют резким скачкам сахара в крови. Например, с
@@ -192,8 +218,12 @@
             фасоль), коричневый рис, хлеб из цельнозерновой пшеницы.
           </p>
         </article>
-        <article class="section__article section__how-to-concentrate-article">
-          <h4 class="article__title title-decor">Читайте</h4>
+        <article
+          class="section__article section__how-to-concentrate-article"
+        >
+          <h4 class="article__title title-decor article__title_type_light">
+            Читайте
+          </h4>
           <p class="article__paragraph">
             Настоящие бумажные книги. Это правда помогает с концентрацией: чтобы
             прочитать пост в соцсети, достаточно нескольких минут или даже
@@ -201,11 +231,12 @@
             часов и круто тренирует направленное внимание.
           </p>
         </article>
+      </div>
       </section>
       <section class="section section__pictures">
-        <h3 class="section__subtitle title-decor section__pictures-subtitle">
+        <h2 class="section__subtitle title-decor section__pictures-subtitle">
           А можно в картинках?
-        </h3>
+        </h2>
         <div class="section__pictures-container">
           <img
             src="./images/sunset.png"
@@ -243,5 +274,6 @@
     <footer class="footer decorated-zone">
       <h2 class="footer__title">focus</h2>
     </footer>
+    <script src="./scripts/script.js"></script>
   </body>
 </html>
