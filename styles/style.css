@@ -329,18 +329,19 @@
 
   .section__grid-wrapper {
     grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: auto;
+  }
+
+  .section__reduced-concentration .section__grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1.25rem;
   }
 
   .section__grid-container {
     grid-column: span 2;
   }
-
-  .section__reduced-concentration .section__grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
-    column-gap: 1.25rem;
-  }
-
+  
   .section__reduced-concentration-title {
     inline-size: 90%;
   }
@@ -349,8 +350,6 @@
     min-block-size: 768px;
   }
 }
-
-
 
 
 
